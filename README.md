@@ -1,11 +1,11 @@
-Assignment 2: Colour Trees
+Colour Trees
 --------------------------
 
-All submitted work must be *done individually* without consulting someone else's solutions in accordance with the University's [Academic Dishonesty and Plagiarism](https://sydney.edu.au/students/academic-dishonesty.html) policies.
+This was a project I did in my second year, in the context of a Data structures and Algorithms subject.
 
 ## Story
 
-We are asked to design a tree capable of storing a certain propagating colour. Which colour is propagated is determined by the colours sorted in its subtree. There is a hierarchy of colours, and an ordering exists to determine which is the dominating colour that will be propagated. This tree is used to do some elemental property checking to run some "what if" scenarios.
+We are asked to design a tree capable of storing a certain propagating colour. Which colour is propagated is determined by the colours stored in its subtree. There is a hierarchy of colours, and an ordering exists to determine which is the dominating colour that will be propagated. This tree is used to do some elemental property checking to run some "what if" scenarios.
 
 Informally, our implementation should support the following:
 
@@ -116,28 +116,18 @@ Perform the property checks to see whether all nodes in the subtree (up and incl
 
 ## Testing
 
-We have provided you with some test cases in the `tests` directory of this
-repository. We will be using unit tests provided with the `unittest` package
-of python.
+Tests were provided in the `tests` directory of this repository. They `unittest` package of python.
 
 **Running Tests**
 
 From the base directory (the one with `node.py` and `tree.py`), run
 
 ```
-python -m unittest -v tests/test_sample_tree.py tests/test_sample_node.py
+python3 -m unittest -v tests/test_sample_tree.py tests/test_sample_node.py
 ```
 
 Or, running all the tests by:
 
 ```
-python -m unittest -vv
+python3 -m unittest -vv
 ```
-
-## Marking
-
-You will be marked using a range of public and hidden tests.
-There will **not** be additional tests added after the due date.
-
-All tests are **between 1 to 5 marks each**.
-
